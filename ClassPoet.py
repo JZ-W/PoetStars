@@ -17,3 +17,11 @@ class Poet:
         print('Chenghu: ',self.Chenghu)
         print('hometown: ',self.hometown)
 
+    def GetAge(self):
+        Age = self.end - self.birth
+        if Age < 0:
+            print("Ah O, error!")
+            return -1
+        else:
+            return Age
+
